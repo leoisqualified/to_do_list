@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.app-title {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 5rem;
+    color: brown;
+}
+
+input[type='text'] {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.task-input {
+    position: relative;
+    top: 220px;
+    width: 500px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+.task-input:active {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.add-task {
+    position: relative;
+    top: 240px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li button {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.edit-btn {
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.add-task:hover, .edit-btn:hover {
+    background-color: brown;
+    color: white;
+}
