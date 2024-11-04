@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    background-color: white;
 }
 
 .app-title {
@@ -12,6 +13,7 @@
 
 input[type='text'] {
     text-align: center;
+    color: black;
 }
 
 .container {
@@ -20,21 +22,22 @@ input[type='text'] {
 
 .task-input {
     position: relative;
-    top: 220px;
+    top: 100px;
     width: 500px;
     height: 30px;
     border: none;
-    border-bottom: 1px black solid;
+    border-bottom: 1px solid black; /* Hide the bottom border by default */
+    outline: none; /* Remove the default browser outline */
 }
 
-.task-input:active {
-    border: none;
-    border-bottom: 1px solid black;
+.task-input:focus {
+    border-bottom: 1px solid black; /* Show the bottom border when the input is focused */
 }
+
 
 .add-task {
     position: relative;
-    top: 240px;
+    top: 120px;
     width: 100px;
     height: 40px;
     background-color: white;
@@ -43,10 +46,10 @@ input[type='text'] {
     border-radius: 5px;
 }
 
-
-
 ul {
     list-style-type: none;
+    position: relative;
+    top: 200px;
 }
 
 li {
@@ -54,7 +57,9 @@ li {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,17 +75,33 @@ li button {
 
 .edit-btn {
     background-color: white;
-    color: brown;
-    border: 1px solid brown;
+    color: green;
+    border: 1px solid green;
     border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    margin-left: 1000px;
 }
 
 .delete-btn {
     background-color: red;
     color: white;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
 }
 
-.add-task:hover, .edit-btn:hover {
+.add-task:hover {
     background-color: brown;
     color: white;
+}
+
+.edit-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
 }
